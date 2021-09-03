@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jrwhyytabletoprpgturntracker.EntityCreatorController">
+   <children>
+      <TextField fx:id="nameEntry" layoutX="29.0" layoutY="143.0" prefHeight="25.0" prefWidth="288.0" />
+      <TextField fx:id="hpEntry" layoutX="29.0" layoutY="209.0" prefHeight="25.0" prefWidth="288.0" />
+      <TextField fx:id="armorClassEntry" layoutX="29.0" layoutY="269.0" prefHeight="25.0" prefWidth="288.0" />
+      <Text layoutX="21.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter info for" />
+      <Text layoutX="29.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="34.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HP" />
+      <Text layoutX="34.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Armor Class" />
+      <Button fx:id="submit" layoutX="284.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#submitOnMouseCicked" text="Submit" />
+      <TextField fx:id="dexField" layoutX="29.0" layoutY="83.0" prefHeight="25.0" prefWidth="288.0" />
+      <Text fx:id="dexText" layoutX="33.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dex Modifier" />
+   </children>
+</AnchorPane>

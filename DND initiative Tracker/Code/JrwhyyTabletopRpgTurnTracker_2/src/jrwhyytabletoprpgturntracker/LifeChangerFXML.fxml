@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="127.0" prefWidth="245.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jrwhyytabletoprpgturntracker.LifeChangerFXMLController">
+   <children>
+      <Text fx:id="promptText" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change  life. Current:" />
+      <TextField fx:id="lifeAmount" layoutX="62.0" layoutY="58.0" />
+      <Button fx:id="toggleButton" layoutX="34.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#handleToggleButtonOnMouseClicked" text="-" />
+      <Button fx:id="enterButton" layoutX="159.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#enterButtonOnClicked" text="Submit" />
+   </children>
+</AnchorPane>

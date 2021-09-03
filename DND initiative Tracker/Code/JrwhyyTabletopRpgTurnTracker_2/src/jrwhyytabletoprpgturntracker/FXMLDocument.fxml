@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jrwhyytabletoprpgturntracker.FXMLDocumentController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="savePlayers" mnemonicParsing="false" onAction="#saveCurrentPlayersOnAction" text="Save Current Players" />
+                  <MenuItem fx:id="saveMonsters" mnemonicParsing="false" onAction="#saveCurrentMonstersOnAction" text="Save Current Monsters" />
+                  <MenuItem fx:id="loadPlayers" mnemonicParsing="false" onAction="#loadPlayersOnAction" text="Load Players" />
+                  <MenuItem fx:id="loadMonsters" mnemonicParsing="false" onAction="#loadMonstersOnAction" text="Load Monsters" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Add">
+            <items>
+              <MenuItem fx:id="addPlayers" mnemonicParsing="false" onAction="#addPlayersOnAction" text="Players" />
+                  <MenuItem fx:id="addMonsters" mnemonicParsing="false" onAction="#addMonstersOnAction" text="Monsters" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="ez" mnemonicParsing="false" onAction="#easyStartOnAction" text="Easy Start for TA" />
+                  <MenuItem fx:id="about" mnemonicParsing="false" onAction="#aboutOnAction" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ListView fx:id="fightOrder" layoutX="15.0" layoutY="43.0" onMouseClicked="#fightOrderOnMouseClicked" prefHeight="447.0" prefWidth="605.0" />
+      <Button fx:id="startBtn" layoutX="518.0" layoutY="507.0" mnemonicParsing="false" onMouseClicked="#startBtnOnMouseClicked" text="Start" />
+      <Button fx:id="resetButton" layoutX="568.0" layoutY="507.0" mnemonicParsing="false" onMouseClicked="#resetButtonOnMouseClicked" text="Reset" />
+   </children>
+</AnchorPane>
